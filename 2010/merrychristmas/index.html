@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Merry Christmas &hearts; the Parr's</title>
+<link rel="stylesheet" type="text/css" media="Screen" href="css/screen.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<header>
+		<h1>Merry Christmas</h1>
+	</header>
+	<section>
+		<section id="top">
+			<h2><span id="ho1">Ho!</span> <span id="ho2">Ho!</span> <span id="ho3">Ho!</span></h2>
+			<p><span><strong>Enjoy</strong> a year in review with the Parr's.</span></p>
+		</section>
+		<section id="bottom">
+			<h3>Follow <strong>the Parr's</strong> this past year, 2010.</h3>
+			<p>2010 was a great year and we want to share it with you! Choose a photo below to begin.</p>
+			<ul id="photos"></ul>
+		</section>
+	</section>
+	<footer>We wish you Happy Holiday's and an amazing 2011. <br />&mdash; Ryan, Coleen, Adelyn and Baby Boy
+			<span>Site built with love and web standards. Limited Internet Explorer support, sorry. <a href="http://www.mozilla.com/en-US/firefox/">Upgrade?</a></span>
+	</footer>
+</div>
+<div class="book_wrapper">
+			<h1>Happy Holidays</h1>
+			<a id="next_page_button"></a>
+			<a id="prev_page_button"></a>
+			<div id="loading" class="loading">Loading pages...</div>
+			<div id="mybook">
+				<ul class="b-load"></ul>
+			</div>
+			<a id="close" href="#">Close Book</a>
+</div>	
+<div id="curtain"></div>
+<script id="flickr" type="text/html">
+	<li>
+		<a rel="flickr" href="{{ medium }}" title="{{ title }} {{ date }} {{ views }}"><img src="{{ square }}" alt="" /></a>
+	</li>
+</script>
+<script id="book" type="text/html">
+		<div class="photo">
+			<img src="{{ medium }}" alt="{{ title }}" />
+			<h2>{{ title }}</h2>
+			<h3>{{ date }}</h3>
+			<div class="desc">{{ description }}</div>
+		</div>
+</script>
+<script src="http://code.jquery.com/jquery-1.4.4.min.js"></script>
+<script src="scripts/min.js"></script>
+<script src="scripts/init.js"></script>
+<script> $(document).ready(function() {init();}); </script>
+</body>
+</html>

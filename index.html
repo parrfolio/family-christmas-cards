@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>2012 Year In Review</title>
+<meta name="viewport" content="user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="stylesheet" type="text/css" media="screen" href="css/screen.css" />
+<link rel="apple-touch-icon-precomposed" href="images/app-icon.png" />
+<!--[if lte IE 8]>
+	<script src="scripts/html5.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="css/ie.css" />
+<![endif]-->
+</head>
+<body>
+<section class="begin">
+	<div class="intro">
+		<p>Enjoy</p>
+		<p>A year in review</p>	
+		<p>with the</p>
+		<p>Parr's</p>
+		<p>2012</p>
+	</div>
+</section>
+<section class="gameboard">
+	<h2>Sinter Klaas</h2>
+	<p>The name Santa Claus evolved from St. Nicholas' Dutch nickname, Sinter Klaas, a shortened form of Sint Nikolaas (Dutch for Saint Nicholas).  The origins of the modern-day Santa Claus can be traced back to this saint. In the 19th century, images of Saint Nicholas/Sinter Klaas became more prevalent in the United States, though depictions of the Christmas legend still varied. This Santa Claus comes from the 1880s. An 1888 book illustration from The Night Before Christmas, or a Visit from St. Nicholas, by Clement Clark Moore. The poem, originally published in 1822, contained several descriptions of Santa as we know him today.</p>
+	<p>Match Santa's throughout history by finding pairs.</p>
+	<ul id="photos" class="photos"></ul>
+	<div class="win"><h2>Nice job!</h2> <p>Now you know all about Santa.</p></div>
+</section>
+<section class="year">
+	<h1>Happy Holidays</h1>
+	<div id="album" class="book_wrapper">
+		<a id="next_page_button"></a>
+		<a id="prev_page_button"></a>
+		<div id="loading" class="loading">Loading pages...</div>
+		<div id="mybook">
+			<div class="b-load"></div>
+		</div>
+		<div class="message">
+			<h2>2012</h2>
+			<p>Enjoy a year in review. We promise, it's short.</p>
+			<p>Have a happy holiday everyone! Until next year...</p>
+		</div>
+	</div>	
+</section>
+<div id="curtain"></div>
+<div id="infobox" class="moreinfo"></div>
+<script id="book" type="text/html">
+		<div class="photo">
+			<img src="{{ medium }}" alt="{{ title }}" />
+			<h2>{{ title }}</h2>
+			<h3>{{ date }}</h3>
+			<div class="desc">{{ description }}</div>
+		</div>
+</script>
+<script id="flickr" type="text/html">
+	<li class="card" data-title="{{title}}" data-image="{{url_s}}" data-info="{{#description}}{{_content}}{{/description}}">
+		<div class="wrap">
+			<img src="{{url_s}}" alt="" />
+			<div class="cover">N</div>
+		</div>
+	</li>
+</script>
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/all.js"></script>
+<script src="scripts/book.js"></script>
+<script src="scripts/game.js"></script>
+</body>
+</html>

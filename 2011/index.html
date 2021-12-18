@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Merry Christmas &hearts; the Parr's</title>
+<link rel="stylesheet" type="text/css" media="Screen" href="css/screen.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="santa" id="wrapper">
+<header>
+	<h1>2011</h1>
+	<h2>Enjoy a year in review with the Parr's</h2>
+	<a href="#" id="book" class="button">Launch!</a>
+</header>
+</div>
+<div id="album" class="book_wrapper">
+			<h1>Happy Holidays</h1>
+			<a id="next_page_button"></a>
+			<a id="prev_page_button"></a>
+			<div id="loading" class="loading">Loading pages...</div>
+			<div id="mybook">
+				<div class="b-load"></div>
+			</div>
+			<a id="close" href="#">Close Book</a>
+</div>	
+<div id="curtain"></div>
+<script id="book" type="text/html">
+		<div class="photo">
+			<img src="{{ medium }}" alt="{{ title }}" />
+			<h2>{{ title }}</h2>
+			<h3>{{ date }}</h3>
+			<div class="desc">{{ description }}</div>
+		</div>
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="scripts/min.js"></script>
+<script src="scripts/init.js"></script>
+<script> $(document).ready(function() {init();}); </script>
+</body>
+</html>
